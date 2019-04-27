@@ -1,6 +1,37 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex; /* Define initial flexbox */
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
 .box {
   width: 60px;
   height: 60px;
   background: #f00;
   margin: 5px;
+  /* flex: 1; Increases the element on the entire screen*/
+}
+
+.green {
+  background: #0f0;
+  order: 0;
+}
+
+.blue {
+  background: #00f;
+  order: 2;
+}
+
+.red {
+  order: 4;
 }
